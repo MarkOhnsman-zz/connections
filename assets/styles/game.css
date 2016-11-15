@@ -14,3 +14,11 @@
 	height: 65px;
 	width: 65px;
 }
+
+.player-select{
+	display: inline-block;
+}
+
+.form-control{
+	margin-bottom: 8%;
+}

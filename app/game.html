@@ -1,7 +1,16 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <button class="pull-right" ng-click="$ctrl.newGame()">Start Game</button>
-    <h3>Connect 4</h3>
+    <h3>Connections!</h3>
+    <div class="player-select">
+      <label for="players">Choose numer of Players:</label>
+      <select id="players" class="form-control" ng-model="$ctrl.selectedPlayers" placeholder="2">
+        <option value="2">2 (Red & Black)</option>
+        <option value="3">3 (Red, Black & Yellow)</option>
+        <option value="4">4 (Red, Black, Yellow & Green)</option>
+        <option value="5">5 (Red, Black, Yellow, Green & Orange)</option>
+      </select>
+      <button ng-click="$ctrl.newGame()">Start Game</button>
+    </div>
   </div>
   <div class="panel-body text-center">
     <div class="board">
